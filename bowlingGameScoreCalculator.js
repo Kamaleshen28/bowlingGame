@@ -5,7 +5,7 @@ const getBowlingGameScore = (rolls) => {
         throw new Error('Input is not an array');
     }
     return rolls.reduce((score, currentPins, currentIndex) => {
-        if(typeof currentValue === 'string'){
+        if(typeof currentPins === 'string'){
             throw new Error('Input only number array');
         }
         if(currentIndex%2 ===0){
