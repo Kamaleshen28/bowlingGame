@@ -12,7 +12,7 @@ const getBowlingGameScore = (rolls) => {
             if(currentPins ===10){
                 score = score + rolls[currentIndex+1] + rolls[currentIndex+2];
             } else if( (currentPins + rolls[currentIndex+1]) === 10){
-                score = score + rolls[currentIndex+1] + 10;
+                score = score + rolls[currentIndex+2] + 10;
             } else{
                 score = score + rolls[currentIndex] + rolls[currentIndex+1];
             }
